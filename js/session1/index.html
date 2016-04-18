@@ -4,13 +4,27 @@
         <meta charset="UTF-8">
         <title>campus - dev j session 1</title>
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js"></script>
     </head>
-    <body>
-        <h1 class="title">dev j session 1</h1>
-        <p class="parag">
-            Première session : on se jette dans le bain.<br>
-            Utilisez le cours base de JS pour réaliser les exos.<br>
-            Aidez-vous des sources mais surtout, cherchez à comprendre !
-        </p>
+    <body onload="init();">
+        <section class="col">
+            <h1 class="title">dev j session 1</h1>
+            <p class="parag">
+                Première session : on se jette dans le bain.<br>
+                Utilisez le cours base de JS pour réaliser les exos.<br>
+                Aidez-vous des sources mais surtout, cherchez à comprendre !
+                <br>
+                Les exos sont déclenchés au click sur leur bouton respectif.<br>
+                Utiliser la console du navigateur pour voir le résultat.
+            </p>
+            <hr>
+            <div class="row">
+                <button id="exo_1" class="btn">exo 1</button>
+                <button id="exo_2" class="btn">exo 2</button>
+                <button id="exo_3" class="btn">exo 3</button>
+                <button id="exo_4" class="btn">exo 4</button>
+                <button id="exo_5" class="btn">exo 5</button>
+            </div>
+        </section>
     </body>
 </html>
