@@ -91,7 +91,8 @@ var init = (function init() {
 
         function displayUserInfo(user) {
             var div = document.querySelector('#res_user1');
-            div.innerHTML += "Cet utilisateur se nommant " + getName(user) + " est âgé(e) de " + getAge(user) + " ans.<br>"
+            div.innerHTML += "Cet utilisateur se nommant " + getName(user) +
+                " est âgé(e) de " + getAge(user) + " ans.<br>";
         }
 
         displayUserInfo(user1);
@@ -106,8 +107,10 @@ var init = (function init() {
         var source = evt.target || evt.srcElement;
 
         if (source.id === 'exo_1') {
+            /* si le bouton clické possède l'identifiant exo_1, on exécute la fonction exo1() */
             exo1();
         } else if (source.id === 'exo_2') {
+            /* ... et ainsi de suite ... */
             exo2();
         } else if (source.id === 'exo_3') {
             exo3();
