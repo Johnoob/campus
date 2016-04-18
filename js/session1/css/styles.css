@@ -1,0 +1,62 @@
+@font-face {
+    font-family: overpass-regular;
+    src: local("Overpass-Regular"),
+        url(../fonts/overpass/Overpass-Regular.ttf),
+        url(../fonts/overpass/Overpass-Regular.eot),
+        url(../fonts/overpass/Overpass-Regular.svg),
+        url(../fonts/overpass/Overpass-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: overpass-light;
+    src: local("Overpass-Regular"),
+        url(../fonts/overpass/Overpass-Light.ttf),
+        url(../fonts/overpass/Overpass-Light.eot),
+        url(../fonts/overpass/Overpass-Light.svg),
+        url(../fonts/overpass/Overpass-Light.woff);
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 10px;
+}
+
+.title {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.parag {
+    font-family: overpass-light;
+    padding: 5px;
+    font-size: .9rem;
+}
+
+.line {
+    margin: 15px auto;
+}
+
+.btn {
+    width: 120px;
+    height: 32px;
+    background: #E3DEBE;
+    color: firebrick;
+    border: 1px solid silver;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: silver;
+}
