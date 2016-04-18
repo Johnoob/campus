@@ -20,25 +20,82 @@ var init = (function init() {
         exo5,
         observe;
 
+    /*
+        point de départ du programme =>
+        on demande à window (l'objet global JS) d'attendre le chargement complet
+        du document HTML. Une fois fait, on écoute les clicks sur tout le body.
+        A chaque click, la fonction observe est exécutée.
+    */
     window.addEventListener('load', function () {
         select('body').addEventListener('click', observe);
     });
 
-
     exo1 = function () {
-        log('exo 1');
+
+        function displayTextBox(message) {
+            window.alert(message);
+        }
+
+        displayTextBox('hello world');
+        displayTextBox('welcome @ JavaScript');
     };
 
     exo2 = function () {
-        log('exo 2');
+
+        function surUneLigne(str1, str2) {
+            log(str1 + ' ' + str2);
+        }
+
+        surUneLigne("C'est une belle journée", "... pour s'exercer à JS");
     };
 
     exo3 = function () {
-        log('exo 3');
+        var resultat;
+
+        function multiplication(a, b) {
+            var res = a * b;
+
+            if (isNaN(res)) {
+                window.alert('mauvais paramètres !!! ');
+                res = 'error';
+            }
+
+            return res;
+
+        }
+
+        resultat = multiplication(10, 130293.44);
+        log(resultat);
     };
 
     exo4 = function () {
-        log('exo 4');
+        var user1, user2;
+
+        user1 = {
+            name: 'Jack',
+            age: 45
+        };
+
+        user2 = {
+            name: 'Julie',
+            age: 23
+        };
+
+        function getName(user) {
+            return user.name;
+        }
+
+        function getAge(user) {
+            return user.age;
+        }
+
+        function displayUserInfo(user) {
+            var div = document.querySelector('#res_user1');
+            div.innerHTML += "Cet utilisateur se nommant " + getName(user) + " est âgé(e) de " + getAge(user) + " ans.<br>"
+        }
+
+        displayUserInfo(user1);
+        displayUserInfo(user2);
     };
 
     exo5 = function () {
