@@ -10,6 +10,11 @@ function select(sCSS) {
     return document.querySelector(sCSS);
 }
 
+function selectAll(sCSS) {
+    "use strict";
+    return document.querySelectorAll(sCSS);
+}
+
 var init = (function init() {
     "use strict";
 
@@ -26,84 +31,27 @@ var init = (function init() {
         du document HTML. Une fois fait, on écoute les clicks sur tout le body.
         A chaque click, la fonction observe est exécutée.
     */
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         select('body').addEventListener('click', observe);
     });
 
-    exo1 = function() {
+    exo1 = function () {
 
-        function displayTextBox(message) {
-            window.alert(message);
-        }
-
-        displayTextBox('hello world');
-        displayTextBox('welcome @ JavaScript');
     };
 
-    exo2 = function() {
+    exo2 = function () {
 
-        function surUneLigne(str1, str2) {
-            log(str1 + ' ' + str2);
-        }
-
-        surUneLigne("C'est une belle journée", "... pour s'exercer à JS");
     };
 
-    exo3 = function() {
-        var resultat;
+    exo3 = function () {
 
-        function multiplication(a, b) {
-            var res = a * b;
-
-            if (isNaN(res)) {
-                window.alert('mauvais paramètres !!! ');
-                res = 'error';
-            }
-
-            return res;
-
-        }
-
-        resultat = multiplication(10, 130293.44);
-        log(resultat);
     };
 
-    exo4 = function() {
-        var user1, user2;
-
-        user1 = {
-            name: 'Jack',
-            age: 45
-        };
-
-        user2 = {
-            name: 'Julie',
-            age: 23
-        };
-
-        function getName(user) {
-            return user.name;
-        }
-
-        function getAge(user) {
-            return user.age;
-        }
-
-        function displayUserInfo(user) {
-            var div = document.querySelector('#res_user1');
-            div.innerHTML += "Cet utilisateur se nommant " + getName(user) +
-                " est âgé(e) de " + getAge(user) + " ans.<br>";
-        }
-
-        displayUserInfo(user1);
-        displayUserInfo(user2);
-    };
-
-    exo5 = function() {
+    exo5 = function () {
         log('exo 5');
     };
 
-    observe = function(evt) {
+    observe = function (evt) {
         var source = evt.target || evt.srcElement;
 
         if (source.id === 'exo_1') {

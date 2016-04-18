@@ -60,3 +60,19 @@ body {
 .btn:hover {
     background: silver;
 }
+
+.block {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 3px solid;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.block:hover {
+    border-color: orange;
+    color: orange;
+}
