@@ -25,7 +25,8 @@ var session2 = (function init() {
         exo5,
         inverserCouleurs,
         observe,
-        swapLetters;
+        swapLetters,
+        User;
 
     /*
         point de départ du programme =>
@@ -74,6 +75,9 @@ var session2 = (function init() {
     swapLetters = function (chaine) {
         var tableau, i, resultat;
 
+        if (!chaine.length) {
+            window.alert('attention -> chaîne vide');
+        }
         tableau = chaine.split('');
         resultat = '';
 
@@ -135,7 +139,55 @@ var session2 = (function init() {
     };
 
     exo5 = function () {
-        log('exo 5');
+        var i, count, users, name, age, resultat, message, btnBonjour;
+        /* on récupère le nombre d'utilisateurs à créer de depuis l'input HTML number*/
+        count = Number(document.querySelector("#nombre_users").value);
+        btnBonjour = document.querySelector("#bonjour_users");
+        /* on créé un tableau vide pour y stocker ensuite les users */
+        users = [];
+
+        resultat = document.querySelector("#resultat_users");
+
+        /* on utilise la variable count pour créer le nombre d'users souhaités */
+        for (i = 0; i < count; i += 1) {
+
+            do {
+                name = window.prompt("Saisir le nom de l'user n°" + (i + 1));
+
+            } while (!name || isFinite(name));
+
+            do {
+                age = window.prompt("Saisir l'age de l'user n°" + (i + 1));
+
+            } while (!age || !isFinite(age));
+
+            users.push(new User(name, age));
+        }
+
+        /* on affiche un message différent si on a créé 1 ou plusieurs users */
+        message = (users.length === 1) ? "user a été créé" : "users ont été créés";
+        /* on affiche le nombre d'users créés dans un block HTML*/
+        resultat.innerHTML = users.length + ' ' + message;
+        log(users);
+
+        btnBonjour.onclick = function helloUser() {
+            var j;
+            if (users.length <= 1) {
+                window.alert("Il n'y a personne à qui dire bonjour");
+            }
+            for (j = 1; j < users.length; j += 1) {
+                log("L'user nommé " + users[j].name + " dit : \n");
+                users[j].direBonjour(users[j - 1]);
+            }
+        };
+    };
+
+    User = function (name, age) {
+        this.name = name;
+        this.age = age;
+        this.direBonjour = function (qui) {
+            log("Bonjour " + qui.name);
+        };
     };
 
     observe = function (evt) {
@@ -155,7 +207,7 @@ var session2 = (function init() {
         } else if (source.id === 'exo_4' || source.id === "verifier_palindrome") {
             exo4();
 
-        } else if (source.id === 'exo_5') {
+        } else if (source.id === 'exo_5' || source.id === "creer_users") {
             exo5();
         }
     };
