@@ -13,10 +13,11 @@
         <h1 class="title">dev j session 2</h1>
         <p class="parag">
             Seconde session : avançons doucement mais surement !
-            <br> Utilisez le cours base de JS pour réaliser les exos.
+            <br> Utilisez le cours "Bases de JS" pour réaliser les exos.
             <br> N'hésitez pas à consulter la documentation
             <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="link">@mdn !</a>
         </p>
+
         <hr class="line">
         <div class="row">
             <button id="exo_1" class="btn">exo 1</button>
@@ -26,8 +27,36 @@
             <button id="exo_5" class="btn">exo 5</button>
         </div>
         <hr class="line">
-        <div id="red" class="block" style="background:red;" onclick="session2.inverserCouleur(this);">a</div>
-        <div id="green" class="block" style="background:green;" onclick="session2.inverserCouleur(this);">b</div>
+
+
+        <h2 class="subtitle">Exo 1: inverser Couleurs</h2>
+        <div id="red" class="block" style="background:red;" onclick="session2.inverserCouleurs(this);">a</div>
+        <div id="green" class="block" style="background:green;" onclick="session2.inverserCouleurs(this);">b</div>
+        <hr class="line">
+
+
+        <h2 class="subtitle">Exo 2:  inverser chaîne</h2>
+        <p class="parag">
+            Saisir un texte et valider : la chaîne saisie est inversée !
+        </p>
+        <input id="chaine_a_inverser" type="text" placeholder="magie programmatique ..." class="input">
+        <input id="inverser_chaine" type="submit" value="valider" class="btn">
+        <hr class="line">
+
+
+        <h2 class="subtitle">Exo 3 : dessiner lignes et colones</h2>
+        <p class="parag">
+            Cliquer sur le bouton ci-dessus pour exécuter les fonctions draw
+        </p>
+        <pre id="result_draw"></pre>
+
+
+        <h2 class="subtitle">Exo 4 : estPalindrome </h2>
+        <input id="saisie_palindrome" type="text" class="input">
+        <input id="verifier_palindrome" type="submit" value="valider" class="btn">
+        <p id="resultat_palindrome" class="parag">
+            
+        </p>
     </section>
 </body>
 

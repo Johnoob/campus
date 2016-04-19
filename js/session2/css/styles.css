@@ -30,6 +30,7 @@ html {
 
 body {
     padding: 10px;
+    font-family: overpass-regular;
 }
 
 .title {
@@ -37,10 +38,16 @@ body {
     font-size: 1.2rem;
 }
 
+.subtitle {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
 .parag {
     font-family: overpass-light;
     padding: 5px;
     font-size: .9rem;
+    margin-bottom: 15px;
 }
 
 .line {
@@ -75,4 +82,10 @@ body {
 .block:hover {
     border-color: orange;
     color: orange;
+}
+
+.input {
+    height: 32px;
+    width: 220px;
+    padding: 5px;
 }
