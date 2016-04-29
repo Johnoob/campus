@@ -30,8 +30,9 @@ html {
 
 body {
     font-family: "overpass-regular";
-    min-height: 140vh;
+    min-height: 200vh;
     position: relative;
+	padding: 20px;
 }
 
 .row {
@@ -115,6 +116,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
     border: 3px solid red;
+    transition: background 0.2s ease-in;
 }
 
 .squares .square.is-active {
@@ -134,7 +136,7 @@ body {
     margin:0 20px;
 }
 
-.tracker .mouse-tracker {
+.mouse-tracker {
     font-size: .9rem;
     background: white;
     position: absolute;
