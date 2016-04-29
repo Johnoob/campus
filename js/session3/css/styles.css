@@ -1,20 +1,20 @@
 @font-face {
     font-family: overpass-regular;
     src: local("Overpass-Regular"),
-        url(../fonts/overpass/Overpass-Regular.ttf),
-        url(../fonts/overpass/Overpass-Regular.eot),
-        url(../fonts/overpass/Overpass-Regular.svg),
-        url(../fonts/overpass/Overpass-Regular.woff);
+    url(../fonts/overpass/Overpass-Regular.ttf),
+    url(../fonts/overpass/Overpass-Regular.eot),
+    url(../fonts/overpass/Overpass-Regular.svg),
+    url(../fonts/overpass/Overpass-Regular.woff);
     font-weight: normal;
 }
 
 @font-face {
     font-family: overpass-light;
     src: local("Overpass-Regular"),
-        url(../fonts/overpass/Overpass-Light.ttf),
-        url(../fonts/overpass/Overpass-Light.eot),
-        url(../fonts/overpass/Overpass-Light.svg),
-        url(../fonts/overpass/Overpass-Light.woff);
+    url(../fonts/overpass/Overpass-Light.ttf),
+    url(../fonts/overpass/Overpass-Light.eot),
+    url(../fonts/overpass/Overpass-Light.svg),
+    url(../fonts/overpass/Overpass-Light.woff);
     font-weight: normal;
 }
 
@@ -29,8 +29,31 @@ html {
 }
 
 body {
-    padding: 10px;
-    font-family: overpass-regular;
+    font-family: "overpass-regular";
+    min-height: 140vh;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+}
+
+.row.exos {
+    justify-content: space-between;
+}
+
+.row.center {
+    justify-content: center;
+}
+
+.exos {
+    padding:20px 40px;
+}
+
+.exo {
+    -webkit-flex: 0 0 30%;
+    flex: 0 0 30%;
 }
 
 .title {
@@ -41,6 +64,8 @@ body {
 .subtitle {
     margin: 0 0 10px;
     font-size: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
 }
 
 .parag {
@@ -68,24 +93,64 @@ body {
     background: silver;
 }
 
-.block {
-    width: 100px;
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 210px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.squares .selector {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.squares .square {
     height: 100px;
-    line-height: 100px;
-    border: 3px solid;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.5rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 3px solid red;
+}
+
+.squares .square.is-active {
+    color: #FFF;
+    background: red;
+}
+
+.mouse-tracker:not(.is-active) {
+    display: none;
+}
+
+.tracker .label:first-of-type {
+    margin-left:0;
+}
+
+.tracker .label {
+    margin:0 20px;
+}
+
+.tracker .mouse-tracker {
+    font-size: .9rem;
+    background: white;
+    position: absolute;
+    height: 60px;
+    width: 120px;
+    border: 1px solid silver;
+    border-radius: .3rem;
+}
+
+.row.scroll-top {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.scroll-top .img {
+    width: 64px;
     cursor: pointer;
-}
-
-.block:hover {
-    border-color: orange;
-    color: orange;
-}
-
-.input {
-    height: 32px;
-    width: 220px;
-    padding: 5px;
 }

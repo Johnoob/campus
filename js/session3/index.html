@@ -6,10 +6,49 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js"></script>
 </head>
-
 <body>
-    <section class="col">
-
-    </section>
+    <h1 class="title">Dev JS - Session 3</h1>
+    <div class="row exos">
+        <div class="choisir exo">
+            <h2 class="subtitle">Exo 1 : choisir carré ...</h2>
+            <select class="selector">
+                <option value="void">choisir...</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+            </select>
+            <div class="squares">
+                <div class="square">a</div>
+                <div class="square">b</div>
+                <div class="square">c</div>
+                <div class="square">d</div>
+                <div class="square">e</div>
+                <div class="square">f</div>
+            </div>
+        </div>
+        <div class="scroller exo">
+            <h2 class="subtitle">Exo 2 : go top scroller</h2>
+        </div>
+        <div class="tracker exo">
+            <h2 class="subtitle">Exo 3 : mouse tracker</h2>
+            <p for="">Activer tracker</p>
+            <div class="row">
+                <label for="activer" class="label">oui</label>
+                <input id="activer_tracker" name="tracker_status" type="radio" class="tracker-trigger">
+                <label for="desactiver" class="label">non</label>
+                <input id="desactiver_tracker" name="tracker_status" type="radio" class="tracker-trigger" checked>
+            </div>
+            <div class="mouse-tracker">
+                <p class="text" id="x_pos"></p>
+                <p class="text" id="y_pos"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row scroll-top center">
+        <img src="assets/circle-arrow-up.svg" alt="go top" class="img">
+    </div>
 </body>
 </html>
