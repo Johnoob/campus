@@ -12,9 +12,11 @@
     display: flex;
     position: fixed;
     width: 100%;
-    background : silver;
+    background : rgba(8, 7, 7, 0.6);
     max-width: inherit;
     padding: 5px 20px;
     height: 40px;
     z-index: 10;
+    border-bottom: 1px solid white;
+    color: white;
 }

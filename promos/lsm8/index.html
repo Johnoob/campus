@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>let's dance</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="js/libs/jquery-1.12.3.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/libs/packery.min.js"></script>
+    <script src="js/libs/smoothScroll.js"></script>
 </head>
 <body class="grid-main">
 
@@ -12,52 +15,50 @@
 
     </div> -->
     <header class="row grid-header">
-        <h1 class="title main">Projet - let's dance</h1>
+        <h1 class="title main">Projet - let's dance with Shonen</h1>
         <nav class="navigation">
             <ul class="row list">
                 <li class="item">
-                    <a href="" class="link">company 1</a>
+                    <a href="" data-anchor="company_1" class="link">company 1</a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">company 2</a>
+                    <a href="" data-anchor="company_2" class="link">company 2</a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">company 3</a>
+                    <a href="" data-anchor="company_3" class="link">company 3</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <div id="company_1" class="company">
-        <div  class="pane intro">
-            <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, rem. Porro nostrum, voluptatibus necessitatibus officia fugit maiores vel blanditiis deserunt, illum placeat ipsum inventore mollitia maxime magni iure distinctio sequi!
-            </p>
+        <div class="row pane intro">
+            <h2 class="title"></h2>
+            <p class="text presentation"></p>
         </div>
         <section class="pane content">
-            <h2 class="title">company 1</h2>
+            <h3 class="title"></h3>
         </section>
     </div>
 
     <div id="company_2" class="company">
-        <div  class="pane intro">
-            <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, rem. Porro nostrum, voluptatibus necessitatibus officia fugit maiores vel blanditiis deserunt, illum placeat ipsum inventore mollitia maxime magni iure distinctio sequi!
-            </p>
+        <div class="pane intro">
+            <h2 class="title"></h2>
+            <p class="text presentation"></p>
         </div>
         <section class="pane content">
-            <h2 class="title">company 1</h2>
+            <h3 class="title"></h3>
         </section>
     </div>
 
     <div id="company_3"  class="company">
         <div class="pane intro">
-            <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, rem. Porro nostrum, voluptatibus necessitatibus officia fugit maiores vel blanditiis deserunt, illum placeat ipsum inventore mollitia maxime magni iure distinctio sequi!
-            </p>
+            <h2 class="title"></h2>
+            <p class="text presentation"></p>
         </div>
         <section class="pane content">
-            <h2 class="title">company 1</h2>
+            <h3 class="title"></h3>
+            <div class="packery">images => packery ici !!!</div>
         </section>
     </div>
 </body>

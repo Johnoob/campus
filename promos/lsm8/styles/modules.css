@@ -19,3 +19,14 @@
 .grid-main .company .title {
     margin: 10px 0;
 }
+
+.grid-main .company .presentation {
+    background: rgba(8, 7, 7, 0.6);
+    border-radius: .3rem;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    width: 40%;
+    color: white;
+    max-height: 30%;
+}
