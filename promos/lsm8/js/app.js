@@ -68,7 +68,7 @@ var letsdance = (function () {
                 htmlID: "company_3",
                 name: "Compagnie Groovie Jab",
                 members: ["Bérénice", "Julie", "Anaïs"],
-                presentation: "Composé de trois danseuses, Grossie Jap est une formation de danse contemporaine qui puise son inspiration dans des musiques electro-groovie. Leur travail propose une relecture abstraite des chefs-d’oeuvre du XiXe et XXe siècles traduit par des mouvements successivement fluides, saccadés et rectilignes. Elles envisagent leurs chorégraphies comme la représentation du parcours visuel, à la fois universel et intime, du spectateur.",
+                presentation: "Composé de trois danseuses, Groovie JAB est une formation de danse contemporaine qui puise son inspiration dans des musiques electro-groovie. Leur travail propose une relecture abstraite des chefs-d’oeuvre du XiXe et XXe siècles traduit par des mouvements successivement fluides, saccadés et rectilignes. Elles envisagent leurs chorégraphies comme la représentation du parcours visuel, à la fois universel et intime, du spectateur.",
                 background: "medias/image/groovie-jab.gif"
             }
         ];
