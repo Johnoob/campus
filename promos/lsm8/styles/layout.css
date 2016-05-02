@@ -1,0 +1,20 @@
+
+.grid-main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+.grid-header {
+    -webkit-display: flex;
+    -justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background : silver;
+    max-width: inherit;
+    padding: 5px 20px;
+    height: 40px;
+    z-index: 10;
+}

@@ -1,0 +1,21 @@
+.grid-main .company {
+    height: 200vh;
+    position: relative;
+}
+
+.grid-main .company .pane {
+    height: 100vh;
+}
+
+.grid-main .company .pane {
+    background-size: cover;
+}
+
+
+.grid-main .company:first-of-type {
+    top: 40px;
+}
+
+.grid-main .company .title {
+    margin: 10px 0;
+}
