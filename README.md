@@ -1,2 +1,4 @@
 # campus
-repository de corrections des exos, TD, TP
+hello world,
+
+trouver ici les corrections des exos (TD, TP)
