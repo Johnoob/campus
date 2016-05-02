@@ -1,0 +1,28 @@
+@font-face {
+    font-family: overpass-regular;
+    src: local("Overpass-Regular"),
+        url(../fonts/overpass/Overpass-Regular.ttf),
+        url(../fonts/overpass/Overpass-Regular.eot),
+        url(../fonts/overpass/Overpass-Regular.svg),
+        url(../fonts/overpass/Overpass-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: overpass-light;
+    src: local("Overpass-Regular"),
+        url(../fonts/overpass/Overpass-Light.ttf),
+        url(../fonts/overpass/Overpass-Light.eot),
+        url(../fonts/overpass/Overpass-Light.svg),
+        url(../fonts/overpass/Overpass-Light.woff);
+    font-weight: normal;
+}
+
+html {
+    font-family: overpass-regular;
+    font-size: 16px;
+}
+
+.text {
+    font-family: overpass-light;
+}
